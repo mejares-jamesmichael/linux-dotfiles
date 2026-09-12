@@ -1,5 +1,5 @@
 # linux-dotfiles
-my arch linux dotfiles
+my arch (omarchy) linux dotfiles
 
 ## Preview
 
