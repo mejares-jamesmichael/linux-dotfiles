@@ -123,6 +123,20 @@ ddg() {
     _open_url "$url"
 }
 
+# --- Brave search ---
+brv() {
+    local encoded url
+    encoded=$(_urlencode "$*")
+
+    if [ -z "$encoded" ]; then
+        url="https://search.brave.com/"
+    else
+        url="https://search.brave.com/search?q=${encoded}"
+    fi
+
+    _open_url "$url"
+}
+
 # --- YouTube search ---
 yt() {
     local encoded url
